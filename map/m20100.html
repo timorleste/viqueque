@@ -1,0 +1,701 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="timorleste at live dot com | T | 2000 | AudioVisual GIS and Archive Development in Timor Leste">
+    <meta name="description" content="Our mission is to help facilitate the newly independent East-Timor in accessing the voices and the key events in its past and fostering an understanding of its unique cultural heritage; to help unite and secure the identity of the country and its people; and to contribute to the forging of a new democratic nation. To ensure the survival of unique resources which contain and communicate the experience and the story of Timor-Leste and to place these at the service of peace and understanding, in Timor-Leste, Regionally and Internationally.">
+    <meta name="keywords" content="Information, Technology, Media, System, Management, Audio, Visual, Archive, CAMSTL, East-Timor, Timor-Leste, Timor-Lorosa'e">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GENERAL WORKFLOW - The Architecture Based on Information Communications Community Service and User Interaction</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<script type="text/javascript" language="JavaScript" src="newwindow.js"></script>
+</head>
+<body bgcolor="#FFFFFF">
+<center>
+<table width="848" border="0">
+<tr>
+<td valign=top>
+<table width="36" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="m10000.html"><img src="../nav/imzoomout.gif" border="0" title="zoom out" alt="zoom out"></a></td>
+  </tr>
+  <tr>
+    <td><a href="m10000.html"><img src="../nav/imzoombutton100enabled.gif" border="0" title="zoom to 100%" alt="zoom to 100%"></a></td>
+  </tr>
+  <tr>
+    <td><img src="../nav/imzoombutton200disabled.gif" border="0" title="actual zoom level" alt="actual zoom level"></td>
+  </tr>
+  <tr>
+    <td><img src="../nav/imzoomin.gif" border="0" title="zoom in" alt="zoom in"></a></td>
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+    <td><a href="javascript:PopUpNewWindow('../leg/legend.html')"><img src="../nav/imlegend.gif" border="0" title="show legend" alt="show legend"></a></td>
+  </tr>
+</table>
+</td>
+<td valign=top>
+<table width="812" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="18"><img src="../nav/imnwlow.gif" width="18" height="18" border="0" alt="NW"></td>
+    <td width="776" background="../nav/immapbordern.gif"> <div align="center"><a href="m20200.html"><img src="../nav/imn.gif" width="18" height="18" border="0" alt="N"></a></div></td>
+    <td width="18"><a href="m20201.html"><img src="../nav/imne.gif" width="18" height="18" border="0" alt="NE"></a></td>
+  </tr>
+  <tr>
+    <td width="18" background="../nav/immapborderw.gif"><img src="../nav/imwlow.gif" width="18" height="18" border="0" alt="W"></td>
+    <td width="776"><img src="20100.jpg" ismap usemap="#imageMapm20100" width="776" height="545" border="0"></td>
+    <td width="18" background="../nav/immapbordere.gif"><a href="m20101.html"><img src="../nav/ime.gif" width="18" height="18" border="0" alt="E"></a></td>
+  </tr>
+  <tr>
+    <td width="18"><img src="../nav/imswlow.gif" width="18" height="18" border="0" alt="SW"></td>
+    <td width="776" background="../nav/immapborders.gif"> <div align="center"><a href="m20000.html"><img src="../nav/ims.gif" width="18" height="18" border="0" alt="S"></a></div></td>
+    <td width="18"><a href="m20001.html"><img src="../nav/imse.gif" width="18" height="18" border="0" alt="SE"></a></td>
+  </tr>
+</table>
+</td>
+</tr>
+<tr>
+<td></td>
+<td align="center">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="-2">
+<br>
+</font>
+</td>
+</tr>
+</table>
+
+
+<div align="center">
+    <b>METADATA 
+    
+    
+ 
+  
+  
+  <table border=1 cellspacing=3 cellpadding= style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  background:#B2B2B2;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p align=center style='text-align:center'><b>Category<o:p></o:p></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;background:#B2B2B2;
+  padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p align=center style='text-align:center'><b>Description<o:p></o:p></b></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Coverages<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>This data 
+          element includes information on the spatial extent of the coverage (.e.g., 
+          national, district).<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Comments<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>This field 
+          includes any relevant narrative information related to the coverage<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Resolution<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The pixel 
+          size of the satellite imagery used for mapping.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Minimum 
+          mapping unit<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The minimum 
+          size area of land cover (e.g., 1 hectare) that appears on the maps.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Map 
+          date<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The date the 
+          source data was collected.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Image 
+          date<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The date the 
+          source data was collected<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Image 
+          type<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The type of 
+          image used to create the coverage.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Map 
+          scale<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>Scale of the 
+          map or coverages developed<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Photo 
+          scale<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>Scale of the 
+          airphotos used to create the coverage.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Coordinate 
+          system<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The specific 
+          system used to reference the coverage to a geographic location.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Projection<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The specific 
+          projection used to display the data coverage.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Classification 
+          system<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The classification 
+          system used in preparing land use/land cover maps or marine classes.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>GIS<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The GIS system 
+          the data coverage is provided.<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Data 
+          Type<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The data encoding 
+          format of the coverage<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Next 
+          scheduled update<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>The date for 
+          the next planned update of the data coverage (Full Tetum Language with AudioVisual File Support Planned)<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Availability<o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#F3F3F3;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt'>This Data 
+          Field contains Relevant Information on the Type of Media, Cost, and 
+          Where Available for the Data (CAMSTL Server Drive No 012 | Under Directory 012 | District Profile | Vector Data Viqueque<o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+     
+
+
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Contact 
+          Name <o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#BCBAB9;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>T
+            <o:p></o:p></span></p>      </td>
+    </tr>
+    <tr> 
+      <td width=805 valign=top style='width:128.5pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><b><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;color:#99CC00'>Communication
+              <o:p></o:p></span></b></p>      </td>
+      <td width=634 valign=top style='width:475.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  background:#BCBAB9;padding:0cm 5.4pt 0cm 5.4pt'> 
+        <p><span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>CAMSTL - SERVER LOCALHOST IN DILI
+            <o:p></o:p></span></p>      </td>
+    </tr>
+  </table>
+  
+
+
+<iframe src="https://docs.google.com/presentation/d/1s1ZpaE1xxrIZLX-NW-oEsThXtFx0WI2Roa3OGMsfnfw/embed?start=true&loop=true&delayms=3000" frameborder="2" width="841" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+
+
+
+</center>
+</body>
+</html>
+
+
+
+
+<map name="imageMapm20100">
+  <area shape="poly" coords="719,450,716,449,715,446,714,443,716,440,718,439,721,440,722,443,725,444,728,446,731,448,731,451,729,454,726,454,723,452,720,451" href="../att/viq_roads_dbf5.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="715,441,716,438,717,434,720,432,722,429,725,427,729,429,730,432,729,436,726,438,723,439,723,442,721,445,718,447,716,445,714,443" href="../att/viq_roads_dbf6.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="724,426,727,428,729,430,729,433,727,435,723,436,720,434,718,431,716,427,717,425,720,423,723,425" href="../att/viq_roads_dbf7.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="718,430,715,427,715,424,717,422,720,422,723,423,726,424,730,425,733,426,736,427,740,431,742,433,743,436,744,440,742,442,739,442,736,440,735,437,733,435,730,433,727,433,723,431,720,430" href="../att/viq_roads_dbf8.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="739,443,736,440,736,437,739,435,742,435,745,436,748,438,748,441,747,444,745,447,742,448,740,447,738,444" href="../att/viq_roads_dbf9.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="743,210,741,213,738,213,736,211,736,207,737,204,740,202,743,201,744,197,746,194,749,191,750,188,752,185,755,183,759,182,762,182,764,184,764,187,762,190,759,191,757,195,754,198,752,200,753,204,753,207,751,210,748,211,745,211" href="../att/viq_roads_dbf11.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="763,173,766,175,770,176,776,178,779,179,780,182,779,185,776,186,770,185,766,183,763,183,760,181,757,178,757,175,759,173,762,173" href="../att/viq_roads_dbf12.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="634,443,636,441,639,441,641,443,641,446,641,449,641,452,640,456,638,458,638,462,635,464,631,464,629,467,627,470,624,472,621,475,618,475,616,473,616,470,618,467,620,464,623,463,625,459,627,457,630,456,632,453,633,449,633,445" href="../att/viq_roads_dbf20.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="616,470,618,467,621,467,623,470,623,473,623,477,621,479,617,480,614,480,611,479,607,481,602,484,599,484,597,482,597,479,601,475,605,473,608,472,612,471,615,472" href="../att/viq_roads_dbf21.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="616,470,618,467,621,467,623,470,623,473,623,477,621,479,618,480,614,480,611,479,607,481,602,484,600,486,596,488,594,490,590,491,587,492,584,494,582,497,579,502,577,506,574,509,571,511,569,513,567,515,564,517,561,519,559,520,556,521,552,522,551,525,550,528,550,532,548,536,545,537,543,536,541,533,542,529,542,525,543,522,545,520,546,517,548,514,552,513,556,513,558,511,562,509,566,505,568,503,571,500,574,494,577,490,579,487,582,485,586,484,589,483,593,481,596,478,601,475,605,473,608,472,611,471,614,471" href="../att/viq_roads_dbf22.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="431,490,428,486,426,484,425,481,427,477,429,474,433,474,435,477,435,480,436,483,438,486,438,489,436,491,433,491" href="../att/viq_roads_dbf24.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="434,475,435,478,434,481,431,482,428,481,426,479,423,478,420,475,419,472,420,468,421,465,422,462,420,459,418,457,415,455,413,452,411,449,408,447,406,444,406,441,408,438,411,438,414,441,417,444,419,447,421,449,424,451,426,453,428,456,429,459,430,463,430,466,428,469,430,471,432,474" href="../att/viq_roads_dbf25.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="406,444,406,440,406,437,406,433,406,430,405,427,406,424,406,421,405,418,405,415,403,411,403,407,405,405,408,405,410,407,413,410,415,412,415,416,414,419,414,422,414,426,414,429,414,432,414,435,414,439,414,442,412,445,410,446,407,445" href="../att/viq_roads_dbf26.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="410,405,411,408,410,412,407,413,404,412,401,411,397,412,393,411,390,410,388,407,386,405,386,401,386,398,386,394,386,390,386,385,389,382,392,382,394,384,394,389,394,392,394,396,394,399,394,403,397,404,400,403,405,404,408,404" href="../att/viq_roads_dbf27.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="386,386,386,383,387,380,389,377,390,375,391,371,394,369,398,369,400,371,400,374,398,376,397,380,395,382,394,387,392,389,389,389,387,387" href="../att/viq_roads_dbf28.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="401,375,398,376,395,375,394,372,395,369,398,367,401,366,405,365,408,367,408,370,405,373,403,374" href="../att/viq_roads_dbf29.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="431,544,433,540,435,537,435,534,434,530,435,527,434,524,434,521,434,518,434,513,434,510,435,507,435,504,435,501,434,498,434,494,432,492,430,488,431,485,434,484,437,485,439,487,440,490,442,493,443,496,444,500,443,503,443,506,443,510,442,513,442,516,443,520,442,523,443,526,442,529,443,533,443,536,444,540,442,543,439,545,437,549,434,549,432,547,431,544" href="../att/viq_roads_dbf30.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="722,35,718,34,717,31,718,28,720,25,721,21,723,18,726,15,730,14,733,15,734,18,732,21,729,24,728,27,731,28,734,30,736,33,738,36,740,39,740,42,740,46,740,49,739,52,736,53,733,52,732,49,732,46,731,42,729,40,729,36,725,35,722,35" href="../att/viq_roads_dbf31.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="733,166,731,163,730,160,727,159,725,157,724,154,723,150,722,147,723,144,723,140,722,137,720,134,720,130,721,126,719,124,719,120,718,116,716,114,715,110,715,106,715,103,717,100,720,98,722,95,722,92,721,88,722,85,723,82,726,79,729,77,732,74,733,71,734,68,734,63,733,60,735,56,737,55,740,56,741,59,742,63,743,67,743,71,742,74,740,78,737,80,736,83,732,85,730,88,730,91,731,95,730,99,728,101,725,104,724,107,724,111,725,114,727,117,728,120,729,124,729,128,729,131,731,134,732,138,731,142,731,146,731,149,733,152,735,154,737,156,738,160,740,162,740,165,738,167,735,167" href="../att/viq_roads_dbf32.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="741,57,741,60,739,63,736,63,734,60,732,57,730,54,731,50,733,46,736,45,738,46,740,49,741,52,741,56" href="../att/viq_roads_dbf33.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="763,182,764,186,763,188,760,190,758,188,755,186,755,182,756,179,756,176,759,173,762,173,764,175,764,180" href="../att/viq_roads_dbf34.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="765,175,764,178,762,180,759,180,757,178,757,174,752,174,748,174,745,173,742,173,739,171,737,169,735,167,733,163,734,161,737,159,740,161,742,163,745,165,748,166,752,166,755,166,760,167,763,168,765,171,765,175" href="../att/viq_roads_dbf35.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="716,429,713,427,710,425,710,422,711,419,713,416,715,413,717,410,718,406,719,402,718,399,718,396,719,393,719,390,720,387,722,384,725,382,727,384,729,386,728,389,727,393,726,396,726,399,727,402,726,407,725,411,723,414,722,417,720,420,722,424,722,427,719,429,716,429" href="../att/viq_roads_dbf36.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="721,431,718,429,715,428,714,425,715,422,718,420,722,420,725,422,727,423,730,425,730,429,729,432,727,435,724,435,721,433" href="../att/viq_roads_dbf37.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="722,425,721,428,718,429,715,428,714,425,715,422,718,421,721,422" href="../att/viq_roads_dbf38.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="722,425,721,428,718,429,715,428,714,425,715,422,718,421,721,422" href="../att/viq_roads_dbf39.html" target="AttributesFrame" title="" alt="">
+  <area shape="poly" coords="701,444,700,441,701,438,704,437,707,436,710,431,712,429,715,427,715,424,717,422,720,422,722,424,724,427,723,431,720,433,717,437,716,441,712,443,710,444,707,446,704,446,701,444" href="../att/viq_roads_dbf40.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="716,429,714,427,714,424,716,421,719,421,722,424,722,427,720,429,717,429" href="../att/viq_roads_dbf41.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="423,541,426,543,426,547,424,549,420,549,417,548,416,545,417,542,421,540" href="../att/viq_roads_dbf43.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="743,241,740,238,740,235,742,233,745,232,748,232,750,234,751,237,751,241,751,244,750,248,748,251,745,251,742,251,739,249,739,246,742,243" href="../att/viq_roads_dbf62.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="728,389,725,391,722,389,721,387,722,383,725,381,726,378,726,375,727,371,728,368,729,365,731,363,733,359,735,356,738,356,741,358,741,361,739,364,738,368,736,370,735,374,734,377,734,380,734,383,732,387,729,389" href="../att/viq_roads_dbf63.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="717,222,718,219,721,217,724,214,727,213,728,210,731,207,735,206,738,205,741,205,743,207,743,211,741,213,738,214,735,215,734,217,731,220,728,222,726,224,722,226,719,226,717,224" href="../att/viq_roads_dbf64.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="742,241,739,242,735,240,732,239,729,237,727,234,723,232,720,230,718,227,718,224,720,222,723,222,727,224,729,226,732,227,734,230,737,231,740,232,744,233,747,235,747,238,745,241,742,241" href="../att/viq_roads_dbf65.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="725,223,725,227,723,229,720,229,718,227,717,224,718,219,721,218,724,219,725,223" href="../att/viq_roads_dbf66.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="743,282,742,279,741,276,738,274,738,270,739,267,741,264,743,260,746,260,748,263,748,266,748,269,749,272,751,275,751,278,752,282,750,286,746,288,743,287,742,284" href="../att/viq_roads_dbf69.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="749,263,748,267,745,268,742,267,741,264,739,261,741,258,740,255,739,251,739,248,740,244,743,243,746,244,747,247,747,251,748,254,749,257,749,260" href="../att/viq_roads_dbf70.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="745,329,745,326,748,322,750,319,750,316,749,312,749,309,748,306,747,303,746,300,745,296,744,293,744,290,742,287,743,283,746,282,749,283,751,286,752,290,752,293,753,297,755,300,757,303,757,306,758,310,759,313,758,317,758,320,756,325,754,328,753,331,753,335,751,338,750,341,750,344,749,347,747,350,744,351,742,354,741,358,741,361,738,363,735,363,733,361,732,357,732,353,734,350,736,348,738,345,741,344,742,340,743,337,744,334,745,331" href="../att/viq_roads_dbf71.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="742,287,742,283,745,281,748,281,750,283,750,287,748,289,745,289,743,287" href="../att/viq_roads_dbf72.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="707,438,707,442,705,444,702,444,700,442,697,440,693,441,691,439,688,438,684,438,681,438,679,435,679,432,681,430,684,430,687,430,690,429,693,430,695,432,699,432,702,433,705,435,707,438" href="../att/viq_roads_dbf73.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="678,440,674,438,673,436,670,433,668,431,663,430,660,430,657,430,653,430,651,428,651,425,653,422,658,422,661,422,665,422,669,422,672,424,675,426,677,428,679,430,682,430,685,431,686,434,685,437,683,438,680,440" href="../att/viq_roads_dbf74.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="656,431,653,432,650,434,648,436,645,439,644,442,642,444,640,447,637,448,635,447,633,444,634,441,635,437,638,435,640,432,642,430,645,428,647,426,650,425,654,423,657,424,658,427,656,430" href="../att/viq_roads_dbf75.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="738,447,738,444,740,441,742,440,745,441,747,444,747,448,746,451,747,454,748,457,752,457,755,459,758,462,761,464,761,468,759,470,756,470,753,468,751,465,747,465,743,465,740,463,738,461,738,458,739,454,738,451,738,447" href="../att/viq_roads_dbf76.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="755,470,753,466,754,463,757,462,761,461,764,461,767,463,768,466,767,470,768,473,768,476,768,479,770,482,772,484,775,485,778,487,779,490,780,494,778,496,774,496,772,494,769,492,766,490,764,487,761,485,760,482,759,478,760,475,759,472,756,471" href="../att/viq_roads_dbf77.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="548,537,545,539,542,539,540,537,540,534,542,531,544,529,547,529,549,531,548,537" href="../att/viq_roads_dbf95.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="535,549,532,549,529,547,529,543,532,541,535,540,538,539,540,535,542,532,545,532,548,534,548,537,547,541,545,544,542,546,538,547,535,548" href="../att/viq_roads_dbf97.html" target="AttributesFrame" title="Trail" alt="Trail">
+  <area shape="poly" coords="82,259,84,262,83,264,80,266,77,264,76,262,77,259,80,258" href="../att/clip10_dbf0.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="76,264,75,261,76,257,79,256,82,257,83,260,83,263,81,265,78,265" href="../att/clip10_dbf1.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="83,259,82,263,79,264,76,263,75,259,76,256,79,255,81,256,83,259" href="../att/clip10_dbf2.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="80,252,82,255,82,258,80,260,77,260,74,258,73,254,74,251,77,250,80,251" href="../att/clip10_dbf3.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="79,250,79,254,77,256,74,256,72,254,72,251,74,249,77,249" href="../att/clip10_dbf4.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="70,249,67,247,67,244,69,242,73,242,75,243,77,246,78,250,77,253,74,254,71,253,70,250" href="../att/clip10_dbf5.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="67,246,67,242,69,240,72,240,74,242,74,246,72,248,69,248,67,246" href="../att/clip10_dbf6.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="75,240,74,243,71,244,68,243,67,240,68,237,71,236,74,237" href="../att/clip10_dbf7.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="75,239,74,242,71,244,68,242,67,240,68,236,71,235,74,236" href="../att/clip10_dbf8.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="75,239,74,242,71,243,68,242,67,239,68,236,71,234,74,236,75,239" href="../att/clip10_dbf9.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="75,239,73,241,70,241,67,239,67,236,70,234,73,234,75,236" href="../att/clip10_dbf10.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="81,281,85,283,86,286,85,289,82,290,79,289,76,287,76,284,78,281" href="../att/clip10_dbf11.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="71,285,70,281,73,278,76,278,78,280,80,283,80,286,78,288,75,288,72,286" href="../att/clip10_dbf12.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="70,281,71,278,73,276,76,278,78,281,77,285,74,286,71,285,70,282" href="../att/clip10_dbf13.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="78,279,74,282,71,280,70,278,71,275,74,273,77,275,78,277" href="../att/clip10_dbf14.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="80,277,77,278,74,277,73,274,74,271,77,270,80,271,81,274,80,277" href="../att/clip10_dbf15.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="83,272,80,274,77,273,76,270,77,267,80,266,82,267,84,270" href="../att/clip10_dbf16.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="84,270,82,272,79,272,77,270,77,267,79,265,82,265,85,267,85,270" href="../att/clip10_dbf17.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="85,262,86,265,85,269,82,270,79,269,78,266,78,262,80,260,83,260" href="../att/clip10_dbf18.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="84,260,84,264,82,266,79,266,77,264,77,261,79,258,82,258" href="../att/clip10_dbf19.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="88,210,84,209,82,206,84,203,86,202,91,202,94,203,97,205,100,206,103,209,107,211,109,214,108,218,107,222,105,225,105,229,107,232,108,236,108,241,107,245,103,248,102,252,101,255,99,258,94,260,90,262,87,264,81,266,77,265,76,262,77,259,83,257,89,253,92,252,92,247,93,244,97,242,100,241,100,236,98,233,97,227,98,223,99,219,98,216,95,215,93,213,91,211,88,210" href="../att/clip10_dbf20.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="153,460,157,460,159,462,159,465,157,467,153,467,151,465,151,462,153,460" href="../att/clip10_dbf21.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="152,461,155,460,157,462,157,466,155,468,151,468,149,466,149,463,152,461" href="../att/clip10_dbf22.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="151,469,147,468,146,465,147,462,150,461,155,462,156,465,155,468,152,469" href="../att/clip10_dbf23.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="152,461,153,466,151,468,148,468,145,465,145,462,147,460,150,460" href="../att/clip10_dbf24.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="145,462,145,459,147,457,150,457,152,459,153,463,152,466,149,467,146,466,145,462" href="../att/clip10_dbf25.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="152,461,149,463,146,461,145,459,146,456,149,454,152,455,153,458,152,461" href="../att/clip10_dbf26.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="153,460,149,460,147,458,147,455,150,452,153,452,155,455,155,458" href="../att/clip10_dbf27.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="149,452,152,448,155,448,157,451,157,454,155,458,152,459,149,458,148,455,149,452" href="../att/clip10_dbf28.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="158,451,156,455,153,456,151,455,149,452,151,448,153,445,156,445,158,447,158,451" href="../att/clip10_dbf29.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="158,451,154,451,152,449,152,446,154,444,157,444,160,446,160,449" href="../att/clip10_dbf30.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="163,447,161,449,157,449,154,447,154,444,157,441,160,439,163,441,164,443,163,447" href="../att/clip10_dbf31.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,438,167,441,164,442,161,441,160,438,161,435,163,433,166,433,168,435" href="../att/clip10_dbf32.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,434,168,437,166,440,163,440,161,438,160,433,163,431,166,431,168,433" href="../att/clip10_dbf33.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,433,168,436,165,438,162,438,160,436,160,433,162,431,165,431" href="../att/clip10_dbf34.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="167,431,167,434,165,437,162,437,160,434,160,431,162,429,165,429,167,431" href="../att/clip10_dbf35.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="167,430,167,434,164,436,161,436,159,434,159,431,161,428,164,428,167,430" href="../att/clip10_dbf36.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="165,429,165,432,163,434,160,434,158,432,158,428,160,426,163,426,165,429" href="../att/clip10_dbf37.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="165,427,164,431,161,432,158,431,156,427,158,424,160,423,163,424" href="../att/clip10_dbf38.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="163,423,164,426,163,429,160,430,157,429,156,426,157,422,160,421,163,422" href="../att/clip10_dbf39.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="162,421,163,425,160,427,157,427,155,425,154,421,156,419,159,419,162,421" href="../att/clip10_dbf40.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="153,419,154,416,157,415,160,416,161,419,162,422,161,425,158,426,155,425,153,422" href="../att/clip10_dbf41.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="162,418,159,420,156,420,154,418,154,415,157,412,160,412,162,415,162,418" href="../att/clip10_dbf42.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="162,416,159,418,156,417,155,414,156,411,159,410,162,411,163,414" href="../att/clip10_dbf43.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="158,409,161,407,164,408,165,411,164,414,161,417,158,417,156,415,156,412,158,409" href="../att/clip10_dbf44.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,411,166,413,162,414,160,412,160,408,162,406,165,405,168,406,169,409,168,411" href="../att/clip10_dbf45.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="171,405,170,408,168,411,165,411,163,408,163,405,163,402,166,400,169,400,171,402" href="../att/clip10_dbf46.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="172,401,168,404,165,403,164,400,166,396,168,395,171,396,172,399" href="../att/clip10_dbf47.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="173,399,170,402,167,402,165,400,165,397,166,394,169,393,172,394,173,397" href="../att/clip10_dbf48.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="165,396,165,392,167,390,170,390,173,392,173,396,172,400,169,401,166,400,165,396" href="../att/clip10_dbf49.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="170,384,171,387,173,391,172,394,169,395,166,394,164,391,163,388,163,385,165,383,168,383" href="../att/clip10_dbf50.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,382,169,385,168,388,165,389,162,388,161,385,162,382,165,381,168,382" href="../att/clip10_dbf51.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="164,377,164,381,162,384,159,384,157,381,156,378,157,375,160,374,162,375" href="../att/clip10_dbf52.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="163,376,163,380,161,382,158,382,154,377,154,373,156,371,159,371,163,376" href="../att/clip10_dbf53.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="158,370,160,374,159,377,156,378,153,377,152,374,153,371,156,370" href="../att/clip10_dbf54.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="156,369,158,373,157,376,154,377,151,375,150,373,151,370,154,369" href="../att/clip10_dbf55.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="153,368,156,369,157,372,156,375,153,376,149,375,148,372,149,369,152,368" href="../att/clip10_dbf56.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="150,367,154,370,154,373,151,375,148,375,146,373,146,370,148,367" href="../att/clip10_dbf57.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="149,366,151,369,151,372,149,374,146,374,143,372,143,369,146,367,149,366" href="../att/clip10_dbf58.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="146,365,149,368,149,371,147,373,144,373,141,371,141,368,143,366" href="../att/clip10_dbf59.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="142,364,144,366,146,369,145,372,142,373,139,372,136,369,136,366,139,364,142,364" href="../att/clip10_dbf60.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="139,363,142,367,140,370,138,371,134,369,133,366,134,364,137,362" href="../att/clip10_dbf61.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="133,368,131,365,132,362,135,361,138,362,140,364,140,367,138,370,135,370" href="../att/clip10_dbf62.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="137,362,138,366,136,368,133,368,131,366,131,363,133,360,136,360" href="../att/clip10_dbf63.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="137,361,137,365,135,367,132,367,129,364,129,360,131,358,134,358,137,361" href="../att/clip10_dbf64.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="134,357,135,361,133,363,130,363,127,361,127,358,130,356,133,356" href="../att/clip10_dbf65.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="132,354,134,358,133,361,130,362,127,361,125,357,126,355,129,353" href="../att/clip10_dbf66.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="124,354,124,351,127,349,130,349,132,351,132,355,132,358,130,361,127,361,124,358,124,354" href="../att/clip10_dbf67.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="133,353,130,355,127,355,125,353,125,350,128,347,131,347,133,349,133,353" href="../att/clip10_dbf68.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="134,348,133,351,131,353,128,353,126,351,126,347,128,344,131,344,133,346" href="../att/clip10_dbf69.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="134,345,133,348,131,350,128,350,126,348,126,345,126,342,128,340,132,340,134,342,134,345" href="../att/clip10_dbf70.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="134,339,133,342,130,343,127,342,125,336,127,332,129,331,132,332,134,339" href="../att/clip10_dbf71.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="133,334,132,338,129,339,126,338,125,335,126,332,129,331,132,332" href="../att/clip10_dbf72.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="133,332,133,335,131,337,127,337,125,335,124,331,125,328,128,327,131,328,133,332" href="../att/clip10_dbf73.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="131,328,131,332,129,334,126,334,124,331,124,328,126,326,129,326" href="../att/clip10_dbf74.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="130,326,130,330,128,332,125,332,123,330,123,327,125,324,128,324" href="../att/clip10_dbf75.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="128,323,129,326,128,329,125,330,122,329,121,326,122,323,125,322,128,323" href="../att/clip10_dbf76.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="123,320,126,323,126,326,124,328,121,328,118,326,117,323,118,320,121,319" href="../att/clip10_dbf77.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="118,326,116,322,117,320,120,318,123,320,124,323,123,326,120,327" href="../att/clip10_dbf78.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="119,317,120,320,119,323,116,324,112,321,110,319,112,316,114,315,119,317" href="../att/clip10_dbf79.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="113,310,114,314,112,316,109,316,106,314,106,311,108,309,111,309" href="../att/clip10_dbf80.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="110,308,113,311,113,314,111,316,108,316,105,314,104,311,105,309,108,307" href="../att/clip10_dbf81.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="102,313,101,310,102,307,105,306,108,307,111,309,112,311,111,314,108,315,105,314" href="../att/clip10_dbf82.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="108,307,108,311,106,313,103,313,100,310,100,307,103,305,106,305" href="../att/clip10_dbf83.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="104,303,106,305,108,308,107,311,104,313,101,311,99,309,99,306,101,304" href="../att/clip10_dbf84.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="95,308,93,304,94,301,97,300,100,302,102,304,102,307,100,309,97,309" href="../att/clip10_dbf85.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="92,304,92,300,94,298,97,298,99,300,100,304,99,307,96,308,94,307" href="../att/clip10_dbf86.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="99,299,98,303,96,305,93,303,91,300,93,297,95,296,98,297" href="../att/clip10_dbf87.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="95,294,98,296,98,300,96,302,93,302,90,300,90,296,92,294,95,294" href="../att/clip10_dbf88.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="88,303,85,301,85,298,87,295,90,295,94,294,96,297,96,300,94,302,91,304,88,303" href="../att/clip10_dbf89.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="92,297,92,300,90,303,87,303,85,300,85,297,87,295,90,295" href="../att/clip10_dbf90.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="85,295,87,293,90,293,92,295,92,298,90,301,87,301,85,299,85,295" href="../att/clip10_dbf91.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="93,298,90,300,87,300,85,298,85,295,88,291,91,291,93,294,93,297" href="../att/clip10_dbf92.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="94,293,93,297,90,298,87,297,86,294,87,291,90,290,93,291" href="../att/clip10_dbf93.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="93,289,94,292,93,296,90,297,87,296,85,293,85,290,88,288,91,288" href="../att/clip10_dbf94.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="87,284,91,287,92,290,91,293,88,294,84,292,81,289,81,286,83,284,86,284" href="../att/clip10_dbf95.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="84,282,87,285,87,288,85,290,82,290,79,289,78,286,79,283,82,282" href="../att/clip10_dbf96.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="182,537,185,540,185,543,183,545,180,545,178,543,178,540,180,538" href="../att/clip10_dbf97.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="160,466,159,469,156,470,154,469,152,465,152,462,154,460,157,460,160,462,160,466" href="../att/clip10_dbf163.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="160,469,158,472,155,472,153,469,152,466,155,463,158,463,160,465,160,468" href="../att/clip10_dbf164.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="159,471,157,473,154,473,152,471,152,468,154,465,157,465,160,467,160,471" href="../att/clip10_dbf165.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="152,469,155,466,158,467,159,470,158,473,155,475,152,473,151,471" href="../att/clip10_dbf166.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="160,470,162,472,162,475,160,477,156,477,154,475,152,473,152,470,154,467,157,467,160,470" href="../att/clip10_dbf167.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="162,471,165,474,165,477,163,480,160,480,157,477,156,475,157,472,160,471" href="../att/clip10_dbf168.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="168,478,168,481,166,483,163,483,161,481,161,478,163,476,166,476,168,478" href="../att/clip10_dbf169.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="161,483,162,480,165,478,168,480,169,483,168,486,165,487,162,486,161,483" href="../att/clip10_dbf170.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="160,488,163,484,166,484,168,487,168,490,166,492,163,492,160,490" href="../att/clip10_dbf171.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="161,492,161,488,163,486,166,486,168,488,168,491,166,494,163,494" href="../att/clip10_dbf172.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="162,493,161,489,163,487,167,487,173,493,174,498,172,500,169,500,162,493" href="../att/clip10_dbf173.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="175,495,176,498,175,501,172,502,169,501,167,498,167,495,169,492,172,492,175,495" href="../att/clip10_dbf174.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="171,503,170,499,173,497,176,497,178,499,179,503,176,505,173,505,171,503" href="../att/clip10_dbf175.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="172,505,173,501,176,500,178,501,181,506,180,510,177,512,174,510,172,505" href="../att/clip10_dbf176.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="173,510,173,506,175,504,179,504,181,507,181,510,179,512,176,512,173,510" href="../att/clip10_dbf177.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="182,509,182,512,180,515,177,515,175,512,175,509,177,507,180,507,182,509" href="../att/clip10_dbf178.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="184,514,184,518,182,520,179,520,177,518,176,515,176,511,178,509,181,509,183,511" href="../att/clip10_dbf179.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="176,518,178,515,180,513,183,515,184,518,183,521,180,522,178,521,176,518" href="../att/clip10_dbf180.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="185,522,185,527,184,530,181,531,178,530,177,522,178,519,181,518,184,519,185,522" href="../att/clip10_dbf181.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="186,533,186,537,183,541,180,541,178,538,178,533,179,530,182,528,184,530,186,533" href="../att/clip10_dbf182.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="177,540,178,537,180,535,183,535,185,537,185,541,183,544,180,544,178,542" href="../att/clip10_dbf183.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="178,543,178,538,181,537,184,538,185,541,185,545,182,547,179,545,178,543" href="../att/clip10_dbf184.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="186,543,186,547,184,549,181,549,179,546,178,543,179,540,182,539,185,540,186,543" href="../att/clip10_dbf185.html" target="AttributesFrame" title="118" alt="118">
+  <area shape="poly" coords="405,336,407,338,409,341,410,345,408,349,408,352,409,355,409,359,406,362,404,364,402,371,401,375,400,379,398,383,395,386,386,391,383,392,380,392,378,390,378,387,380,385,390,380,392,377,393,373,395,369,395,365,396,361,400,357,400,353,400,349,401,346,400,343,397,339,397,336,399,334,402,334,405,336" href="../att/clip10_dbf190.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="318,282,318,277,319,274,322,273,325,274,326,279,329,283,331,286,334,290,335,295,337,298,340,299,343,301,346,302,349,305,351,308,352,311,351,316,349,319,347,323,350,326,351,330,353,334,353,338,356,340,356,344,356,347,355,352,352,354,349,354,347,352,348,345,347,342,345,340,345,336,342,333,341,329,339,327,339,317,341,313,344,311,341,309,337,307,334,306,331,303,328,298,327,294,325,292,322,288,321,285,319,282" href="../att/clip10_dbf191.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="215,291,210,294,207,294,205,292,205,289,208,286,210,283,213,282,216,281,219,280,222,278,224,275,227,274,231,274,232,271,235,268,239,268,241,270,243,267,246,265,250,264,252,267,252,270,249,272,246,277,243,278,239,278,237,281,233,283,229,283,226,286,221,288,218,290,215,291" href="../att/clip10_dbf192.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="231,244,230,238,231,235,234,234,237,235,239,241,240,244,242,249,243,255,245,259,248,263,251,266,256,269,261,273,269,273,272,274,275,279,276,286,276,290,280,295,286,299,288,302,286,310,282,316,285,317,287,322,286,328,287,337,288,340,293,337,296,333,299,331,305,331,307,333,310,337,316,335,320,336,322,339,327,349,327,353,335,355,341,353,348,347,352,347,357,348,374,355,378,359,386,365,388,369,386,388,385,396,391,401,397,407,404,421,404,429,402,441,402,444,405,446,407,448,408,453,407,456,410,459,414,460,423,468,426,474,427,491,428,498,432,502,437,508,438,516,437,523,436,529,434,532,428,535,429,539,433,542,435,545,433,548,431,549,423,545,420,537,419,535,419,531,428,525,429,522,430,516,430,512,426,507,422,503,419,493,419,477,416,473,411,467,407,467,399,460,398,457,400,453,396,451,394,449,394,440,396,429,396,424,391,413,386,407,378,401,376,398,378,387,380,370,373,366,370,363,354,356,345,360,337,363,322,360,319,358,319,351,316,344,309,345,305,344,302,339,300,342,292,347,285,348,281,345,280,339,278,328,279,323,275,322,272,320,273,314,275,311,279,307,276,302,270,298,268,292,268,287,267,283,260,281,251,275,247,272,243,269,239,264,236,258,234,251,233,247,231,244" href="../att/clip10_dbf194.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="527,221,530,223,531,228,531,231,531,234,530,237,529,240,528,248,527,251,524,252,521,251,519,242,520,239,522,236,523,233,523,230,523,226,523,222,526,221" href="../att/clip10_dbf195.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="537,495,540,494,551,492,554,487,558,482,561,481,564,481,572,484,575,484,576,475,576,470,575,465,577,459,580,455,584,452,583,447,584,441,589,433,593,426,594,422,593,418,589,413,581,406,580,403,580,396,578,393,572,391,569,384,568,376,565,365,564,361,561,356,557,348,550,341,547,337,547,333,548,327,550,322,551,316,551,312,547,308,542,299,540,294,536,289,532,282,527,273,525,268,523,263,522,257,522,252,519,252,512,254,506,254,500,253,495,253,486,251,481,249,477,245,474,242,470,236,466,235,460,233,451,230,443,227,439,219,441,210,439,205,436,202,434,196,435,193,436,189,437,186,440,185,443,186,444,189,444,193,442,197,445,200,448,205,449,210,447,217,453,222,463,225,467,227,472,227,475,228,477,232,479,236,482,238,486,242,489,244,495,245,499,245,507,246,511,246,517,244,522,244,525,244,528,245,530,251,530,256,531,260,532,265,535,269,539,278,542,285,546,290,549,295,554,303,558,308,559,316,557,323,556,329,555,334,563,343,567,352,571,357,573,362,576,374,576,381,582,386,587,392,588,395,588,401,594,408,599,413,602,421,601,429,595,437,592,443,591,447,592,453,591,457,586,461,583,465,584,469,584,475,584,482,582,488,578,491,571,492,563,489,561,491,559,496,556,499,544,502,543,505,545,509,546,512,543,519,537,525,535,528,541,530,547,531,550,533,549,542,545,548,542,549,539,548,538,545,541,540,539,538,535,537,530,534,528,531,527,527,528,523,532,520,536,515,538,511,536,508,534,504,534,500,537,495" href="../att/clip10_dbf196.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="650,267,657,269,661,270,667,270,671,272,675,275,676,279,678,282,683,285,686,287,688,290,688,293,691,295,692,298,693,302,696,302,699,303,701,306,702,310,704,312,707,312,714,314,718,312,721,311,724,309,727,310,731,311,733,313,733,317,731,319,727,319,723,321,719,321,715,322,707,320,703,320,696,315,694,310,690,310,687,309,685,305,684,300,681,298,680,294,676,290,673,289,671,285,669,282,667,279,660,278,656,277,651,275,647,276,643,275,642,273,643,270,650,267" href="../att/clip10_dbf489.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="751,284,750,288,752,292,754,297,755,301,756,304,757,308,759,312,759,316,757,319,752,324,745,325,742,327,739,326,738,323,740,319,743,317,748,317,750,315,749,312,748,308,748,303,746,299,746,296,743,293,742,288,743,283,743,279,746,275,749,275,751,277,751,284" href="../att/clip10_dbf490.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="772,227,768,228,764,229,761,230,758,231,754,234,753,240,752,246,749,249,745,250,742,251,740,253,736,255,737,259,735,261,733,264,730,266,728,269,731,271,732,275,734,279,735,281,735,285,733,288,730,291,721,296,723,298,724,302,724,305,730,306,733,309,733,312,735,317,737,321,740,319,744,319,747,320,748,323,747,330,743,337,740,340,740,343,742,347,740,352,737,355,740,356,744,359,745,362,745,365,743,368,745,375,746,379,745,382,743,384,740,386,741,390,740,393,738,396,733,397,730,397,728,402,726,406,725,411,725,415,723,418,727,420,731,424,734,431,732,439,732,443,735,448,734,453,734,457,733,460,732,464,729,467,732,466,735,467,741,470,744,471,748,470,754,472,756,474,758,478,760,481,760,485,761,488,764,490,768,489,771,489,777,492,779,495,779,501,777,506,777,511,776,517,773,519,769,521,771,523,773,529,774,533,771,538,771,541,772,545,771,548,768,549,765,548,764,545,761,541,760,535,761,533,764,531,762,527,761,521,761,517,763,514,769,513,769,505,771,500,770,497,765,498,759,497,754,493,752,486,751,483,749,479,744,480,741,480,736,477,733,475,730,475,726,475,723,473,722,470,722,465,724,460,726,456,726,452,726,449,722,448,719,448,717,446,715,443,716,439,718,435,721,433,725,434,724,429,721,427,717,427,714,426,711,423,711,419,714,414,717,412,719,404,720,400,721,396,722,392,724,388,726,384,727,380,733,378,738,378,737,373,735,370,734,366,735,363,730,363,728,361,725,358,725,355,729,351,732,349,732,344,731,339,733,335,737,332,733,330,730,325,729,321,726,317,725,314,722,313,719,313,716,310,715,307,716,302,714,299,713,296,714,291,717,290,723,286,725,283,725,278,723,276,721,274,720,270,721,266,722,262,725,259,727,253,728,250,732,248,735,246,738,244,743,242,745,238,746,234,746,231,747,228,751,226,754,224,758,223,761,221,764,220,767,217,774,218,778,222,780,226,779,228,776,230,773,228" href="../att/clip10_dbf491.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="758,131,760,134,763,134,768,137,771,139,775,140,779,141,780,144,779,147,776,148,769,146,765,144,761,142,757,142,753,139,751,136,750,133,751,130,754,129,758,131" href="../att/clip10_dbf491.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="355,66,352,68,349,67,348,64,349,61,352,59,355,59,357,61,357,64" href="../att/clip10_dbf493.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="353,58,357,58,359,60,359,63,357,66,353,66,351,64,351,61,353,58" href="../att/clip10_dbf494.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="357,65,353,64,352,61,353,59,356,57,359,58,360,61,359,64" href="../att/clip10_dbf495.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="360,58,362,60,362,63,360,65,357,65,354,63,354,60,356,58,360,58" href="../att/clip10_dbf496.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="363,62,363,65,361,67,358,67,356,65,356,62,358,59,361,59,363,62" href="../att/clip10_dbf497.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="355,66,358,62,361,62,363,65,363,68,361,71,358,71,356,68" href="../att/clip10_dbf498.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="356,70,356,67,358,64,361,64,363,67,363,70,361,73,358,73,356,70" href="../att/clip10_dbf499.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="364,72,361,74,358,74,356,72,356,69,358,66,363,66,365,68,365,72" href="../att/clip10_dbf500.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="366,70,363,72,360,70,359,68,360,65,363,64,366,65,367,68" href="../att/clip10_dbf501.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="366,70,363,70,360,68,360,65,363,63,366,63,368,65,368,68" href="../att/clip10_dbf502.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="368,61,371,63,372,66,371,68,368,70,364,70,362,68,362,64,364,62,367,61" href="../att/clip10_dbf503.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="365,68,366,64,369,63,372,64,373,67,372,70,369,71,366,70" href="../att/clip10_dbf504.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="366,71,366,68,368,66,371,66,373,68,374,71,371,73,368,73" href="../att/clip10_dbf505.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="373,74,369,74,366,72,366,68,368,66,372,66,374,69,374,72" href="../att/clip10_dbf506.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="376,70,374,72,371,72,369,70,369,67,371,64,374,64,377,66,376,70" href="../att/clip10_dbf507.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="378,66,375,69,372,69,370,67,370,64,372,61,374,59,377,61,378,63" href="../att/clip10_dbf508.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="380,61,381,64,380,67,377,68,373,67,371,65,371,62,374,59,377,59,379,61" href="../att/clip10_dbf509.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="374,67,374,63,376,61,379,61,382,63,382,67,380,69,377,69,374,67" href="../att/clip10_dbf510.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="375,67,376,63,379,62,381,63,383,66,381,69,379,71,376,69" href="../att/clip10_dbf511.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="379,73,376,72,375,67,377,65,380,65,383,67,384,70,383,72,380,74" href="../att/clip10_dbf512.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="385,69,383,72,380,72,377,70,378,65,380,62,383,62,386,64,385,69" href="../att/clip10_dbf513.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="380,62,385,61,387,63,387,66,384,69,381,69,379,67,379,64" href="../att/clip10_dbf514.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="385,59,388,62,387,66,385,68,382,68,380,66,379,62,380,59,383,58" href="../att/clip10_dbf515.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="386,63,382,65,380,64,378,61,380,57,383,55,386,56,387,59,386,63" href="../att/clip10_dbf516.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="388,60,384,62,381,61,380,58,381,55,385,53,388,54,389,57,388,60" href="../att/clip10_dbf517.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="390,56,391,59,390,62,387,63,384,62,381,59,381,55,384,53,387,53,389,55" href="../att/clip10_dbf518.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="389,65,386,64,384,61,386,58,389,57,392,58,393,61,392,64,389,65" href="../att/clip10_dbf519.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="393,64,389,63,388,61,389,58,394,56,398,57,399,60,398,63,393,64" href="../att/clip10_dbf520.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="396,64,393,63,392,60,393,57,396,56,399,57,401,60,399,63,397,64" href="../att/clip10_dbf521.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="399,55,402,55,404,57,404,60,402,63,398,63,396,61,396,57,398,55" href="../att/clip10_dbf522.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="400,69,398,66,397,61,397,58,400,55,403,55,405,58,405,62,408,66,406,69,404,70,400,69" href="../att/clip10_dbf523.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="401,69,400,66,401,64,404,62,407,64,408,67,407,69,404,71,401,69" href="../att/clip10_dbf524.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="403,71,402,67,405,65,408,65,410,67,410,70,408,73,405,73,403,71" href="../att/clip10_dbf525.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="410,82,406,80,405,78,406,75,409,74,413,75,414,78,413,80,410,82" href="../att/clip10_dbf526.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="414,80,411,81,409,80,407,77,409,74,412,73,415,74,416,77,415,80" href="../att/clip10_dbf527.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="416,77,414,80,411,80,409,78,409,75,411,71,414,71,417,73,416,77" href="../att/clip10_dbf528.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="417,76,415,78,412,78,409,76,408,73,407,69,410,66,413,66,415,68,416,71,417,74" href="../att/clip10_dbf529.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="415,72,412,73,409,72,408,69,409,66,412,64,415,66,416,68,415,72" href="../att/clip10_dbf530.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="414,64,417,65,419,67,419,70,417,72,413,72,410,71,408,68,410,66,412,64" href="../att/clip10_dbf531.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="420,67,422,70,421,73,418,74,415,73,412,70,412,67,415,65,418,65" href="../att/clip10_dbf532.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="415,73,415,69,417,67,420,67,422,69,422,72,420,74,417,74" href="../att/clip10_dbf533.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="416,79,416,75,415,72,416,69,419,68,422,69,424,73,424,77,423,81,420,82,417,81" href="../att/clip10_dbf534.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="418,82,417,79,418,76,421,75,423,76,425,80,424,82,421,84,418,82" href="../att/clip10_dbf535.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="423,85,420,83,419,81,420,78,423,77,426,77,428,79,428,82,426,85" href="../att/clip10_dbf536.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="428,85,424,84,423,81,424,78,427,77,430,78,431,81,430,84" href="../att/clip10_dbf537.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="431,77,435,78,436,81,435,83,430,85,427,84,426,81,427,78,431,77" href="../att/clip10_dbf538.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="440,85,437,85,434,83,434,79,437,77,440,77,442,79,442,82,440,85" href="../att/clip10_dbf539.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="437,77,441,75,443,77,445,79,443,82,441,84,438,84,435,82,435,79" href="../att/clip10_dbf540.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="446,80,444,82,441,82,439,80,439,77,441,73,445,73,447,76,447,79" href="../att/clip10_dbf541.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="444,72,446,74,447,78,445,81,442,81,439,78,439,74,441,72" href="../att/clip10_dbf542.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="441,79,438,77,438,74,440,72,443,72,446,74,446,77,444,80,441,80" href="../att/clip10_dbf543.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="444,69,444,73,442,75,439,75,437,73,437,68,439,66,442,66,444,68" href="../att/clip10_dbf544.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="437,66,438,63,441,62,444,63,445,66,444,70,442,72,439,72,437,70,437,66" href="../att/clip10_dbf545.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="446,66,443,68,440,68,438,66,438,63,440,60,443,59,446,60,447,63,446,66" href="../att/clip10_dbf546.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="450,60,448,63,446,65,443,65,440,63,440,60,442,57,445,55,448,55,450,57" href="../att/clip10_dbf547.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="450,59,448,61,445,61,443,59,443,56,445,54,448,54,450,56,450,59" href="../att/clip10_dbf548.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="452,55,449,58,446,58,444,56,444,53,446,50,449,50,452,52,452,55" href="../att/clip10_dbf549.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="451,55,447,56,445,54,445,51,448,48,452,47,454,50,454,53,451,55" href="../att/clip10_dbf550.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="450,55,447,53,447,50,449,48,453,48,455,50,455,53,453,55" href="../att/clip10_dbf551.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="455,51,455,54,453,56,450,56,448,54,447,50,450,48,453,48,455,50" href="../att/clip10_dbf552.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="447,55,448,51,451,49,454,51,455,53,454,57,451,58,448,57" href="../att/clip10_dbf553.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="453,60,450,59,448,55,449,52,452,51,455,52,457,55,457,58,455,60" href="../att/clip10_dbf554.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="459,58,457,60,453,60,451,57,451,54,453,52,456,51,459,52,460,55" href="../att/clip10_dbf555.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="460,56,457,58,454,57,453,54,454,51,458,49,461,50,462,53,460,56" href="../att/clip10_dbf556.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="456,49,459,47,462,47,464,49,464,53,462,55,459,56,456,55,455,52,456,49" href="../att/clip10_dbf557.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="460,54,457,52,457,49,460,47,463,47,465,50,465,53,463,55,460,55" href="../att/clip10_dbf558.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="461,55,459,53,459,50,461,48,464,48,467,49,468,52,467,55,464,56" href="../att/clip10_dbf559.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="462,55,462,51,464,49,467,49,469,51,469,55,467,57,464,57" href="../att/clip10_dbf560.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="462,53,465,50,468,50,470,52,470,56,468,58,465,58,462,56" href="../att/clip10_dbf561.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="467,59,463,59,461,57,461,54,463,52,467,51,469,53,469,56,467,59" href="../att/clip10_dbf562.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="465,51,468,54,468,57,466,59,462,59,460,57,460,54,462,52" href="../att/clip10_dbf563.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="459,57,460,54,463,52,466,53,467,56,466,59,463,60,460,59" href="../att/clip10_dbf564.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="461,60,459,57,460,54,463,53,466,54,467,57,466,60,463,61,461,60" href="../att/clip10_dbf565.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="468,61,465,61,463,59,463,56,465,54,469,54,471,56,471,59,469,61" href="../att/clip10_dbf566.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="469,61,466,61,464,59,464,56,466,54,469,53,472,54,473,57,472,60" href="../att/clip10_dbf567.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="473,61,470,59,469,57,470,54,473,53,477,54,479,57,477,59,475,61" href="../att/clip10_dbf568.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="473,58,474,54,477,53,480,54,481,58,480,61,477,62,474,61" href="../att/clip10_dbf569.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="472,59,474,56,477,54,480,55,481,58,480,61,478,65,474,65,472,63,472,59" href="../att/clip10_dbf570.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="477,66,474,65,472,61,473,59,476,57,480,59,481,62,480,65,477,66" href="../att/clip10_dbf571.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="482,65,478,66,476,63,476,60,478,58,481,57,484,58,485,61,484,64" href="../att/clip10_dbf572.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="486,62,483,64,480,64,478,62,478,59,480,56,483,55,486,56,487,59,486,62" href="../att/clip10_dbf573.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="487,61,484,63,481,62,480,59,482,55,485,54,488,55,489,58,487,61" href="../att/clip10_dbf574.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="489,59,485,61,483,60,481,57,483,54,486,53,488,54,490,57" href="../att/clip10_dbf575.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="484,52,488,51,491,52,492,55,491,57,487,60,484,60,482,58,482,55,484,52" href="../att/clip10_dbf576.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="491,51,493,53,494,56,493,58,490,60,487,58,484,56,484,53,486,51,490,51" href="../att/clip10_dbf577.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="500,60,502,63,502,66,500,68,497,68,494,66,491,62,489,60,488,57,489,54,492,53,495,54,498,57,499,60" href="../att/clip10_dbf578.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="496,67,495,63,497,61,500,61,503,63,503,66,500,68,497,68" href="../att/clip10_dbf579.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="502,67,500,69,497,69,495,67,495,64,497,61,500,61,503,64,502,67" href="../att/clip10_dbf580.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="499,62,502,66,500,69,498,70,495,69,494,66,495,63,498,62" href="../att/clip10_dbf581.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="495,62,498,62,501,64,501,67,499,69,495,69,493,67,493,64,495,62" href="../att/clip10_dbf582.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="494,62,498,62,500,64,500,67,497,70,494,70,492,68,492,65,494,62" href="../att/clip10_dbf583.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="491,67,493,65,497,65,499,67,499,70,496,72,493,72,491,70,491,67" href="../att/clip10_dbf584.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="488,71,490,67,492,66,495,66,497,68,497,71,495,74,492,75,489,74,488,71" href="../att/clip10_dbf585.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="492,77,489,74,489,71,491,69,494,69,497,72,497,75,495,77,492,77" href="../att/clip10_dbf586.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="496,77,493,76,492,73,493,70,496,69,499,70,500,73,499,76,496,77" href="../att/clip10_dbf587.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="267,26,266,23,267,20,270,19,273,20,275,23,278,25,279,28,278,31,275,32,270,29,267,26" href="../att/clip10_dbf588.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="265,24,261,22,260,20,261,17,264,16,268,16,271,19,272,23,270,25,267,25" href="../att/clip10_dbf589.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="262,16,266,17,267,20,266,23,263,24,260,23,259,20,260,17" href="../att/clip10_dbf590.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="253,26,250,24,249,22,250,19,256,18,260,17,262,20,262,23,260,25,257,26,253,26" href="../att/clip10_dbf591.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="252,26,249,24,248,22,249,19,252,18,255,19,257,22,255,24,252,26" href="../att/clip10_dbf592.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="251,26,248,26,246,24,246,21,248,18,252,18,254,19,256,22,254,24,252,26" href="../att/clip10_dbf593.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="249,27,247,28,244,27,243,24,244,21,247,19,250,21,251,23,250,26" href="../att/clip10_dbf594.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="247,21,249,25,248,28,245,29,242,28,241,25,242,22,245,21" href="../att/clip10_dbf595.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="246,21,247,24,246,27,243,28,240,26,239,23,240,21,243,19,246,21" href="../att/clip10_dbf596.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="246,21,246,25,244,27,241,27,239,25,239,22,241,19,244,19" href="../att/clip10_dbf597.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="240,16,243,18,243,22,241,24,238,24,235,22,235,18,238,16" href="../att/clip10_dbf598.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="235,24,232,23,231,20,232,17,235,16,239,16,241,18,241,21,239,24,235,24" href="../att/clip10_dbf599.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="233,15,237,17,238,20,237,22,234,24,231,23,228,20,228,17,230,15" href="../att/clip10_dbf600.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="229,15,232,15,235,17,235,20,232,22,229,22,227,20,227,17,229,15" href="../att/clip10_dbf601.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="228,16,231,15,233,18,233,21,231,23,227,23,225,21,225,18,228,16" href="../att/clip10_dbf602.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="224,19,226,17,229,17,231,19,231,22,229,25,226,25,223,23,223,20" href="../att/clip10_dbf603.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="224,19,228,19,230,21,230,24,228,26,225,26,223,24,223,21" href="../att/clip10_dbf604.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="222,20,225,20,228,21,229,24,228,26,225,28,221,28,219,27,217,24,219,22,222,20" href="../att/clip10_dbf605.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="220,29,215,30,213,27,213,24,215,22,219,21,222,22,223,25,222,28" href="../att/clip10_dbf606.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="213,30,209,29,208,26,209,23,212,22,215,22,218,23,220,26,218,29,215,30" href="../att/clip10_dbf607.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="213,23,213,27,211,30,208,30,205,27,205,24,208,21,211,21" href="../att/clip10_dbf608.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="210,20,212,24,211,27,208,28,205,27,203,23,204,20,207,19,210,20" href="../att/clip10_dbf609.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="207,19,209,21,209,24,207,26,203,26,201,24,201,21,203,19,207,19" href="../att/clip10_dbf610.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="200,26,200,22,202,19,206,19,208,21,208,24,207,28,204,29,201,28" href="../att/clip10_dbf611.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="209,28,208,31,205,32,202,31,201,28,202,24,205,23,208,24,209,27" href="../att/clip10_dbf612.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="209,31,206,34,203,34,201,31,201,28,204,25,207,25,209,27,209,30" href="../att/clip10_dbf613.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="202,27,206,26,208,29,208,32,206,34,203,34,201,32,201,29" href="../att/clip10_dbf614.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="198,27,201,27,204,30,204,33,201,35,198,35,195,34,194,31,195,28,198,27" href="../att/clip10_dbf615.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="199,38,198,41,195,43,193,41,191,38,191,35,194,32,197,32,199,34,199,37" href="../att/clip10_dbf616.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="196,45,194,48,191,48,189,45,189,42,192,39,195,39,197,41,197,45" href="../att/clip10_dbf617.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="194,50,190,52,188,51,186,48,188,45,191,44,193,45,195,48" href="../att/clip10_dbf618.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="189,55,184,55,182,53,182,50,184,48,187,46,190,46,193,48,193,51,190,54" href="../att/clip10_dbf619.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="188,55,185,56,182,55,181,52,182,49,186,47,189,49,190,51,189,54" href="../att/clip10_dbf620.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="182,49,186,49,188,51,188,54,186,57,182,57,180,54,180,51" href="../att/clip10_dbf621.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="180,52,182,50,185,50,187,52,187,55,185,58,182,59,179,58,178,55,180,52" href="../att/clip10_dbf622.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="185,58,183,61,180,61,178,59,178,56,179,53,182,51,185,53,186,55" href="../att/clip10_dbf623.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="180,62,176,61,175,59,176,56,179,55,182,56,183,59,182,61" href="../att/clip10_dbf624.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="172,61,174,58,177,57,179,58,181,61,179,65,176,66,174,65,172,62" href="../att/clip10_dbf625.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="179,65,176,67,173,66,172,63,173,60,176,59,179,60,180,63" href="../att/clip10_dbf626.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="172,62,175,60,178,61,179,64,178,67,175,68,172,67,171,64" href="../att/clip10_dbf627.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="171,67,171,64,173,61,176,61,178,64,179,68,177,70,174,70,171,67" href="../att/clip10_dbf628.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="180,66,181,71,178,73,175,73,173,70,173,67,175,65,178,65" href="../att/clip10_dbf629.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="173,67,177,66,180,67,181,70,180,73,176,75,172,75,170,73,170,70,172,68" href="../att/clip10_dbf630.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="310,171,312,168,317,167,320,166,323,162,326,160,329,162,330,164,329,167,327,171,324,174,321,175,317,175,315,178,312,179,310,178,308,175,310,171" href="../att/clip10_dbf631.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="328,192,325,187,323,183,323,177,323,172,322,169,323,164,325,161,328,161,330,164,330,168,331,171,331,175,331,178,331,182,333,186,336,188,338,191,336,194,334,195,328,192" href="../att/clip10_dbf632.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="273,31,271,28,272,25,275,24,278,25,279,28,278,31,275,32,273,31" href="../att/clip10_dbf633.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="277,35,274,33,272,30,272,27,274,25,277,25,279,27,282,29,282,32,280,34" href="../att/clip10_dbf634.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="280,35,277,34,276,31,277,28,280,27,283,28,284,31,283,34,280,35" href="../att/clip10_dbf635.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="280,35,277,32,277,29,279,27,283,27,285,29,285,32,283,35" href="../att/clip10_dbf636.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="287,27,291,27,293,29,293,33,291,35,287,35,284,35,281,34,280,31,281,28,284,27,287,27" href="../att/clip10_dbf637.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="291,35,288,34,287,31,288,28,291,27,294,28,295,31,294,34,291,35" href="../att/clip10_dbf638.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="295,29,297,32,295,35,293,36,290,35,288,31,289,28,292,27,295,29" href="../att/clip10_dbf639.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="289,34,289,31,292,29,295,29,297,32,297,35,295,37,292,37,289,34" href="../att/clip10_dbf640.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="290,36,290,33,292,31,295,31,297,33,297,37,295,39,292,39,290,37" href="../att/clip10_dbf641.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="291,39,290,35,292,32,295,32,298,35,298,38,295,40,292,40" href="../att/clip10_dbf642.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="292,40,291,37,292,34,295,33,297,34,299,37,297,40,295,41" href="../att/clip10_dbf643.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="293,41,292,38,293,35,296,34,298,35,300,38,299,41,296,42,293,41" href="../att/clip10_dbf644.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="295,42,294,39,295,36,298,35,302,37,303,41,302,43,299,45,295,42" href="../att/clip10_dbf645.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="298,45,296,41,297,39,300,37,303,39,305,42,304,45,301,46" href="../att/clip10_dbf646.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="304,48,300,47,299,44,300,41,303,40,307,41,308,44,307,47,304,48" href="../att/clip10_dbf647.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="307,47,303,47,301,45,301,42,304,39,307,39,309,42,309,45" href="../att/clip10_dbf648.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="313,43,309,45,306,44,305,41,306,38,310,36,312,38,314,40" href="../att/clip10_dbf649.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="313,42,309,43,307,41,307,38,309,35,313,34,315,37,315,40,313,42" href="../att/clip10_dbf650.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="309,35,312,33,315,35,316,37,315,40,312,42,309,41,308,38,309,35" href="../att/clip10_dbf651.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="313,41,310,39,310,36,312,33,316,34,318,36,318,39,316,41" href="../att/clip10_dbf652.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="316,42,313,39,313,36,315,34,319,34,322,37,322,40,320,42,316,42" href="../att/clip10_dbf653.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="316,41,315,37,318,35,321,35,323,37,324,41,322,43,319,43,316,41" href="../att/clip10_dbf654.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="320,45,318,43,318,39,320,37,323,37,325,39,326,42,325,45,322,46" href="../att/clip10_dbf655.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="326,48,322,46,321,44,322,41,325,40,329,41,331,43,331,46,329,48,326,48" href="../att/clip10_dbf656.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="328,51,327,47,330,44,333,44,335,47,336,50,335,53,332,54,329,53" href="../att/clip10_dbf657.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="331,55,330,51,333,49,336,49,340,54,340,58,338,60,335,60,331,55" href="../att/clip10_dbf658.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="339,65,336,62,336,59,338,57,341,57,344,58,345,61,344,64,341,65" href="../att/clip10_dbf659.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="343,66,340,65,338,62,340,59,342,58,347,59,350,61,350,64,348,66,343,66" href="../att/clip10_dbf660.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="346,67,344,65,344,62,346,60,349,60,352,62,352,65,349,67" href="../att/clip10_dbf661.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="366,197,368,203,367,206,364,207,361,206,360,202,357,199,356,195,355,192,352,189,351,186,348,184,347,180,344,179,339,179,337,177,334,176,330,175,328,172,325,170,322,166,322,162,323,157,322,153,323,148,324,144,322,141,319,139,318,136,317,132,315,129,315,125,316,121,315,118,313,113,312,105,313,101,318,95,324,93,327,92,328,87,331,83,339,78,342,74,346,72,348,70,347,66,346,63,348,60,351,60,355,65,356,71,352,78,347,81,344,84,337,89,335,94,332,99,329,100,326,100,321,104,321,111,323,115,324,121,323,126,325,129,326,134,330,138,333,141,335,145,335,148,334,151,330,152,331,156,330,162,333,165,336,168,339,169,344,171,347,171,350,172,353,175,355,179,358,183,360,186,363,188,365,191,364,195" href="../att/clip10_dbf662.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="277,121,278,115,281,112,281,109,283,105,284,101,286,98,286,95,289,92,290,89,293,86,288,84,286,80,286,77,286,71,283,66,283,60,281,56,277,54,275,51,274,47,270,45,268,42,269,32,271,26,275,24,278,25,279,28,277,34,276,39,279,41,282,46,285,50,290,56,291,63,294,68,295,74,294,78,298,79,301,83,302,87,299,91,297,93,295,96,293,101,291,104,290,108,289,111,288,116,287,118,286,123,285,127,282,128,279,127,277,121" href="../att/clip10_dbf663.html" target="AttributesFrame" title="0" alt="0">
+  <area shape="poly" coords="612,49,615,47,620,47,624,47,627,45,630,43,633,43,635,40,636,37,640,36,644,35,647,34,650,32,653,30,657,31,659,34,660,37,662,41,664,44,666,47,668,50,671,51,675,53,679,53,683,52,686,49,689,48,692,47,695,44,698,42,700,39,703,40,706,40,705,37,707,34,704,32,703,29,707,30,710,28,711,25,714,24,717,24,720,22,723,18,726,16,730,18,735,17,738,17,742,17,745,14,747,11,751,10,752,7,753,4,756,5,760,5,760,2,763,0,776,0,776,12,773,14,772,17,771,21,772,25,773,29,773,32,776,35,776,38,773,39,770,40,768,43,769,47,770,51,771,55,767,59,767,62,767,66,767,70,763,73,759,75,756,76,753,79,751,83,750,87,750,91,748,94,745,96,743,98,741,101,738,99,732,99,728,97,724,98,722,101,719,103,714,103,710,103,704,103,700,102,697,102,693,101,692,98,691,95,687,95,684,95,681,97,677,97,673,98,671,100,669,103,666,106,663,108,660,108,656,111,652,112,649,109,647,107,643,108,639,108,636,109,633,111,631,114,628,116,625,113,624,109,624,105,623,101,623,97,622,93,622,88,621,84,621,80,619,77,616,73,615,68,614,64,616,60,617,57,615,52,612,49" href="../att/pat_dbf7.html" target="AttributesFrame" title="0.002550" alt="0.002550">
+  <area shape="poly" coords="427,81,428,84,428,88,429,92,429,96,431,100,434,104,437,107,440,109,442,113,442,116,444,119,444,124,444,127,443,132,445,135,448,139,446,142,444,144,442,147,440,150,440,153,440,156,441,161,441,166,442,170,442,175,441,178,439,181,437,184,437,187,437,191,440,193,441,197,442,201,442,204,444,208,446,210,446,214,444,217,443,221,442,224,440,222,436,221,432,219,428,219,423,219,418,219,415,219,411,219,406,218,398,218,395,218,391,218,386,218,383,218,380,220,378,224,376,227,374,230,370,232,367,234,363,235,359,237,355,238,352,241,351,244,350,246,350,250,347,251,345,255,344,259,344,262,345,265,342,267,340,272,339,276,340,279,340,283,338,285,336,288,334,291,332,294,332,298,331,301,332,304,335,306,338,308,341,308,344,310,346,312,349,315,347,319,344,322,344,325,343,328,345,330,349,330,351,331,355,332,361,333,366,335,370,336,372,338,376,340,379,343,382,343,387,343,391,344,395,344,399,345,402,348,402,352,404,357,406,360,402,363,398,366,397,369,398,373,398,377,396,380,394,385,391,387,388,390,386,392,381,395,380,392,383,388,385,385,384,379,384,376,383,370,382,368,377,365,374,364,371,363,366,362,361,359,356,357,353,355,352,352,349,351,345,354,341,356,338,358,333,360,328,359,324,358,322,354,323,351,322,348,319,344,316,344,313,345,309,345,306,343,302,342,298,342,295,344,291,347,287,349,284,346,283,341,283,337,282,333,282,329,282,326,279,324,276,323,278,319,280,317,282,314,284,310,283,307,279,305,275,304,272,302,270,298,270,294,272,291,271,288,269,285,266,283,262,283,259,282,257,280,253,277,250,277,247,275,244,277,243,280,240,281,237,278,235,281,233,284,230,286,227,285,224,287,222,290,219,293,218,296,217,299,213,304,210,309,208,312,205,313,203,311,199,309,196,308,193,305,190,303,187,301,188,298,184,293,180,290,176,286,172,283,170,281,167,277,165,275,162,274,158,272,156,270,155,267,153,264,149,263,146,262,142,262,137,264,135,267,130,267,127,265,123,265,119,265,113,266,110,267,105,267,99,267,95,269,92,272,88,275,86,278,83,278,79,279,74,282,74,279,75,276,78,272,81,269,82,265,80,262,78,258,77,255,76,252,74,249,72,246,71,241,71,238,73,234,74,229,77,226,79,224,80,220,81,216,79,213,77,211,81,209,85,208,89,204,93,203,97,203,100,204,103,201,106,198,108,196,113,193,115,190,118,188,120,184,126,181,130,180,135,177,138,174,140,171,144,169,147,165,150,161,153,158,156,155,159,150,160,145,163,142,161,140,165,138,168,136,171,134,174,131,175,127,173,125,173,121,173,117,174,114,173,111,171,107,170,104,171,100,174,98,175,95,177,92,176,89,176,86,173,84,175,80,175,77,172,76,172,73,175,71,176,68,175,65,176,62,178,59,181,58,183,54,186,51,189,50,192,46,193,42,195,39,195,35,197,32,201,31,204,30,205,27,204,24,208,24,210,26,215,26,218,26,221,24,225,24,227,21,231,18,234,20,238,20,241,22,243,24,247,24,250,22,257,22,260,21,263,20,267,19,269,22,271,25,274,27,277,30,281,31,284,31,289,31,292,31,294,35,296,38,299,40,302,43,305,44,309,41,312,38,316,38,319,38,322,42,326,44,330,47,332,49,334,52,336,56,339,60,342,61,345,63,349,64,352,64,355,62,358,62,359,65,359,69,363,68,366,66,369,67,371,70,373,68,374,65,377,64,379,68,382,67,384,64,382,61,385,57,387,60,391,61,394,60,398,60,401,60,402,64,404,66,406,68,407,72,408,76,412,77,413,75,411,71,413,68,416,69,419,72,420,77,421,80,424,81" href="../att/pat_dbf8.html" target="AttributesFrame" title="0.017447" alt="0.017447">
+  <area shape="poly" coords="496,73,500,72,504,71,507,69,508,72,511,73,514,72,515,68,518,66,521,64,521,61,523,58,526,57,530,58,532,57,532,53,533,50,535,47,534,43,538,42,542,41,544,39,546,36,544,33,547,31,550,28,547,25,551,23,555,22,558,21,562,21,566,22,569,23,572,25,576,28,583,32,586,34,590,37,595,41,597,44,600,46,604,48,607,49,612,49,615,52,617,55,616,58,615,62,614,66,616,70,617,75,621,80,621,83,622,88,622,93,623,97,623,101,624,105,624,108,625,113,626,117,628,122,628,126,628,130,627,133,627,140,627,143,627,148,627,153,627,157,629,160,631,164,631,167,630,172,628,175,627,179,626,184,626,188,626,192,624,195,622,198,622,202,622,206,621,209,616,212,614,215,610,217,608,219,603,223,599,225,595,228,593,231,590,233,586,233,582,235,577,236,573,234,569,234,566,236,563,239,560,240,556,242,552,244,549,242,546,241,544,239,542,237,538,236,534,236,530,235,528,234,526,229,529,226,528,222,526,218,524,215,520,215,517,211,516,208,515,205,512,202,510,200,507,199,504,195,503,192,501,190,498,188,496,185,495,182,494,178,495,175,497,172,497,169,497,165,497,161,496,158,496,154,497,150,496,145,495,142,496,137,497,133,496,129,493,126,494,123,493,119,492,116,493,111,495,107,496,103,496,100,497,96,497,92,498,89,498,85,497,82,496,77,496,73" href="../att/pat_dbf9.html" target="AttributesFrame" title="0.005508" alt="0.005508">
+  <area shape="poly" coords="776,222,772,222,770,224,770,228,767,226,763,228,760,228,756,229,754,231,751,234,749,237,750,240,749,244,748,248,745,248,742,249,739,251,736,253,732,255,732,259,730,263,727,265,727,268,725,272,728,275,730,279,730,282,732,285,730,288,727,291,723,293,720,294,717,295,713,295,710,294,705,293,702,293,698,292,694,292,689,293,685,294,682,294,679,294,675,294,671,294,668,292,664,292,659,291,656,291,652,291,649,293,648,297,648,301,646,304,644,308,645,312,648,315,651,317,654,319,654,322,654,325,653,329,654,332,657,336,658,339,658,343,656,347,654,350,653,353,648,355,644,356,640,356,635,356,631,356,626,356,622,355,618,354,612,352,607,351,603,350,598,349,595,348,590,347,587,347,583,348,579,350,576,351,572,352,571,354,567,353,564,353,562,350,558,345,555,341,553,336,552,331,553,327,554,322,556,319,556,315,554,311,551,309,546,304,544,300,541,295,538,292,536,289,534,281,531,279,529,276,527,270,527,266,527,261,526,257,525,253,524,250,523,247,523,244,526,240,526,236,530,235,534,236,538,236,542,237,544,239,546,241,549,242,552,244,556,242,559,241,563,239,566,236,569,234,573,234,577,236,580,236,584,235,587,233,591,233,595,228,599,225,603,223,608,219,610,217,614,215,616,212,619,210,622,208,622,204,622,201,623,197,626,194,626,190,626,186,627,182,628,177,629,174,631,170,631,165,629,161,627,157,627,153,627,148,627,144,627,140,627,135,628,131,628,126,628,122,626,117,630,115,632,113,636,109,639,108,643,108,647,107,649,109,651,112,656,111,659,109,663,108,666,106,669,103,671,100,673,98,677,97,681,97,684,95,687,95,691,95,692,98,693,101,697,102,700,102,704,103,708,103,712,103,717,103,721,101,724,100,727,97,731,98,735,99,740,100,743,98,745,96,748,94,750,91,750,87,751,84,752,81,754,78,757,76,761,74,765,72,768,69,767,65,767,60,769,57,771,54,770,50,768,46,769,42,772,39,776,38,776,222" href="../att/pat_dbf11.html" target="AttributesFrame" title="0.011650" alt="0.011650">
+  <area shape="poly" coords="427,81,432,81,435,80,438,81,441,79,443,76,441,74,440,70,441,66,443,63,445,61,447,58,448,54,450,51,451,55,454,56,457,54,460,51,464,52,466,55,463,56,466,58,470,57,473,57,476,57,476,61,480,62,483,60,486,57,488,54,491,56,494,59,495,62,498,64,496,66,493,69,492,72,496,73,496,77,497,81,498,84,498,88,496,91,497,94,497,98,496,102,495,106,494,109,493,113,492,117,493,120,493,124,495,128,497,132,496,137,495,140,495,144,497,147,497,151,495,155,497,159,497,163,497,167,497,171,496,175,494,178,495,182,496,185,498,188,501,190,503,192,504,195,506,198,509,200,512,202,515,202,515,206,516,209,519,214,522,215,525,217,528,222,529,226,526,229,527,232,526,236,526,239,525,242,523,246,524,249,519,252,515,253,510,253,506,252,501,251,497,252,493,253,489,253,486,251,483,248,480,245,477,244,475,241,476,238,476,235,473,234,470,235,468,233,465,231,461,231,458,230,454,229,450,227,446,226,442,224,443,221,444,217,446,214,446,210,444,208,443,205,442,201,441,197,440,193,437,191,437,187,437,184,439,181,441,178,442,175,442,172,442,168,441,163,441,159,440,154,440,151,442,147,444,144,446,142,448,139,445,135,443,132,444,127,444,124,444,120,442,117,442,113,441,110,438,108,435,106,432,102,430,99,429,95,429,90,428,86,428,83" href="../att/pat_dbf12.html" target="AttributesFrame" title="0.002768" alt="0.002768">
+  <area shape="poly" coords="776,230,773,229,770,228,770,224,772,222,776,222,776,230" href="../att/pat_dbf19.html" target="AttributesFrame" title="0.001504" alt="0.001504">
+  <area shape="poly" coords="776,344,772,346,768,348,765,349,763,352,761,355,758,356,754,358,752,360,749,362,747,365,744,366,741,361,736,359,733,359,729,361,725,361,721,360,716,359,713,359,708,358,705,358,701,358,696,357,692,356,687,356,684,355,681,355,677,354,672,353,667,353,662,352,659,351,654,351,655,348,657,345,658,341,657,336,655,333,653,329,654,325,654,322,654,319,651,317,648,315,645,312,644,308,646,304,648,301,648,298,648,295,651,292,653,290,657,291,661,292,665,292,668,293,673,294,677,294,682,294,685,294,689,293,694,292,698,292,702,293,705,293,710,294,713,295,717,295,720,294,723,293,727,292,729,288,732,287,730,283,730,280,730,277,726,274,726,270,727,265,730,263,732,261,732,257,733,253,737,252,740,250,743,248,746,249,749,247,750,243,750,239,749,235,753,232,755,230,758,228,762,228,765,227,768,227,772,228,776,230,776,344" href="../att/pat_dbf20.html" target="AttributesFrame" title="0.006047" alt="0.006047">
+  <area shape="poly" coords="381,395,384,393,388,390,391,387,394,385,396,381,398,378,399,375,397,371,397,368,400,364,404,362,405,359,403,355,402,351,400,346,397,345,391,344,387,343,382,343,379,344,376,340,372,338,370,336,366,335,361,333,358,332,354,331,350,331,347,330,343,330,344,326,344,322,347,319,349,316,348,314,345,311,342,309,339,309,336,307,333,305,332,302,333,298,332,294,334,291,336,288,336,285,339,285,339,281,340,278,339,274,341,270,343,266,345,263,343,260,344,257,345,253,348,251,349,248,350,246,352,242,354,239,357,238,363,235,367,234,370,232,374,230,376,227,378,224,380,220,383,218,386,218,391,218,395,218,398,218,404,218,409,219,415,219,418,219,423,219,428,219,432,219,435,220,439,221,441,223,440,228,437,230,433,233,429,237,428,240,428,243,430,247,432,251,433,255,432,260,432,263,433,268,435,272,434,276,433,281,432,285,430,288,429,291,427,295,427,298,428,303,430,307,430,312,426,315,424,319,424,323,424,326,426,332,427,335,431,341,433,344,435,349,436,353,435,356,436,359,434,364,433,368,432,373,433,377,435,381,436,384,434,387,434,391,433,394,434,399,430,400,425,403,422,404,419,407,415,410,411,409,407,408,404,407,399,407,395,407,391,406,386,404,383,399,381,395" href="../att/pat_dbf21.html" target="AttributesFrame" title="0.003018" alt="0.003018">
+  <area shape="poly" coords="442,224,446,226,449,227,452,228,455,229,459,230,462,231,466,230,468,233,472,234,475,234,476,238,475,241,477,244,480,245,483,248,486,251,489,253,493,253,497,252,501,251,506,252,510,253,513,254,517,253,522,251,525,252,526,257,527,261,527,265,527,268,527,273,530,277,534,281,535,287,537,290,539,293,542,298,545,301,548,307,552,309,555,312,556,316,555,320,554,325,553,328,552,333,554,339,557,343,561,348,563,352,565,355,566,358,568,361,570,364,571,368,572,371,572,377,573,382,575,385,578,388,582,389,584,391,585,394,584,398,585,402,588,406,591,409,595,411,597,413,597,417,598,421,599,424,600,427,604,428,609,428,612,427,616,429,619,430,623,429,626,429,630,429,633,430,634,433,637,435,641,437,644,435,647,433,650,431,652,434,653,438,654,441,657,443,659,446,659,449,660,454,660,459,660,464,662,467,664,470,664,473,664,477,664,480,663,484,664,488,661,492,659,495,656,499,653,502,650,504,647,508,644,509,642,512,642,518,643,522,641,525,639,528,637,531,633,531,628,530,625,529,621,528,618,530,615,530,611,530,607,530,603,529,600,531,597,531,594,532,590,532,586,534,583,531,579,531,576,528,573,528,570,530,567,530,563,532,559,532,556,535,554,538,549,540,544,542,540,543,536,545,511,545,512,541,513,538,511,535,508,534,508,531,511,528,509,525,510,522,512,519,516,518,517,514,518,511,521,509,520,506,517,503,515,501,512,499,508,498,505,499,502,500,499,502,496,501,488,501,484,501,480,500,475,498,471,497,470,493,468,490,467,486,466,482,465,479,463,474,462,470,461,466,460,463,457,461,460,459,460,454,461,451,464,447,465,442,467,439,467,436,466,432,464,429,461,427,458,426,454,424,451,422,448,420,448,415,447,412,444,410,441,408,438,404,434,400,433,395,435,392,434,389,436,385,435,381,434,378,433,375,432,370,433,367,435,361,436,358,435,354,437,351,434,347,432,343,429,338,427,334,425,329,424,325,424,321,426,315,430,312,430,309,428,303,427,299,427,296,429,291,430,288,432,285,433,282,434,279,435,275,434,270,432,266,432,260,433,257,433,253,431,248,429,246,427,241,428,238,430,235,435,232,439,229,442,226" href="../att/pat_dbf23.html" target="AttributesFrame" title="0.010027" alt="0.010027">
+  <area shape="poly" coords="74,282,77,280,81,279,85,278,88,275,91,273,93,270,96,268,103,268,107,267,113,266,116,266,121,265,126,265,130,267,134,267,137,264,142,262,146,262,149,263,153,264,155,267,156,270,158,272,162,274,165,275,167,277,170,281,172,283,176,286,179,288,182,292,187,296,188,298,188,302,193,305,196,308,199,309,203,311,204,313,208,312,210,309,213,304,216,301,218,296,219,293,222,290,224,287,227,285,230,286,233,285,235,282,236,278,239,280,243,280,244,277,247,275,249,277,253,277,257,280,259,282,262,283,266,283,269,285,271,287,272,290,270,294,270,298,272,302,275,304,279,305,283,307,284,310,282,314,280,317,278,319,276,323,279,324,282,326,282,329,282,333,283,337,283,341,284,346,286,349,291,347,295,344,298,342,302,342,305,342,309,345,313,345,316,344,319,344,322,348,323,351,322,354,323,357,326,359,331,359,335,359,341,356,345,354,349,351,352,352,353,355,356,357,359,359,364,361,368,363,372,364,375,364,379,367,383,369,383,373,384,379,385,383,385,386,381,390,380,393,383,399,386,404,390,407,393,409,394,412,394,415,396,418,399,418,402,419,401,422,401,426,402,430,401,433,398,435,398,439,398,443,399,447,402,448,404,451,402,455,402,458,405,461,409,463,411,464,408,466,403,465,398,464,395,464,391,465,387,467,383,469,380,470,377,472,372,473,367,476,363,478,358,482,355,483,352,486,346,489,342,492,337,495,334,497,330,499,327,501,324,502,321,504,318,506,315,508,311,510,307,513,303,515,300,517,296,520,293,521,288,524,285,526,281,529,277,531,274,533,270,535,267,537,263,539,259,542,256,544,183,545,181,541,182,538,182,533,181,530,181,527,181,521,180,518,179,513,178,510,176,505,175,502,173,499,170,496,168,494,165,491,164,488,165,484,165,480,161,476,157,473,156,470,156,466,155,464,151,465,149,462,149,458,151,456,153,452,155,448,158,446,160,444,163,441,164,438,164,435,163,432,161,428,160,425,158,422,157,419,158,416,160,413,164,410,166,408,167,404,168,400,169,397,169,393,168,389,166,387,163,384,161,381,160,378,157,375,154,373,151,372,148,371,144,369,141,368,137,366,134,364,132,361,130,358,128,356,129,352,130,347,130,343,130,339,129,335,128,330,125,326,122,324,118,322,116,320,112,316,110,313,106,311,104,308,101,307,97,305,96,301,93,298,90,300,88,297,90,294,88,290,84,287,80,285,76,284,74,282" href="../att/pat_dbf25.html" target="AttributesFrame" title="0.012484" alt="0.012484">
+  <area shape="poly" coords="694,357,699,358,705,358,708,358,713,359,716,359,721,360,725,361,728,361,731,360,736,359,741,361,743,365,745,367,748,365,750,361,752,358,755,357,760,356,762,354,764,351,768,348,772,346,775,344,776,415,773,416,769,414,769,411,766,410,762,410,759,411,754,410,751,410,748,408,745,405,742,405,739,407,736,408,731,410,728,411,724,411,722,413,720,416,716,420,716,423,720,423,724,424,728,426,731,429,731,433,730,436,728,439,725,439,722,437,720,441,715,439,712,439,709,441,706,443,703,439,702,435,702,432,702,428,703,421,702,418,703,412,703,408,703,403,703,400,701,397,701,394,702,391,700,389,698,386,698,382,697,377,695,374,695,371,694,367,694,363,694,360,694,357" href="../att/pat_dbf27.html" target="AttributesFrame" title="0.006837" alt="0.006837">
+  <area shape="poly" coords="564,353,567,353,571,354,572,352,576,351,579,350,581,348,584,347,588,347,593,348,597,348,600,349,605,350,610,352,615,353,620,355,624,356,629,356,634,356,640,356,644,356,648,355,651,355,654,352,657,351,662,352,667,353,672,353,675,354,681,355,684,355,687,356,692,356,694,359,694,363,694,367,695,370,695,374,697,377,697,382,699,384,700,389,702,390,701,393,701,396,702,399,703,403,703,408,703,412,703,415,703,420,702,425,702,430,702,434,701,438,699,436,696,437,692,435,688,435,685,434,680,436,677,436,676,433,674,430,671,428,668,427,664,427,661,426,658,426,653,428,649,430,647,433,644,435,641,437,637,435,634,433,633,430,630,429,626,429,623,429,619,430,616,429,612,427,609,428,604,428,600,427,599,424,598,421,597,417,597,413,595,411,591,409,588,406,585,402,584,398,585,394,584,391,582,389,578,388,575,385,573,382,572,377,572,373,571,369,571,366,569,362,566,359,565,356" href="../att/pat_dbf28.html" target="AttributesFrame" title="0.002195" alt="0.002195">
+  <area shape="poly" coords="390,407,394,407,399,407,404,407,407,408,410,409,413,409,417,409,420,406,425,403,429,400,432,400,436,402,440,406,442,409,446,410,448,415,448,418,449,421,454,424,457,426,461,427,464,429,466,432,467,436,467,439,465,442,464,447,463,450,460,452,460,457,458,459,460,463,461,466,462,470,463,474,464,478,466,482,467,486,468,490,470,493,471,496,470,500,465,503,462,505,457,506,453,509,450,509,446,507,443,502,439,501,436,501,432,500,428,500,425,500,424,497,425,493,424,490,422,485,421,481,422,476,422,473,420,471,416,470,413,467,410,463,407,462,403,460,402,456,403,453,404,450,401,448,398,446,398,442,398,437,399,434,402,432,402,428,400,424,402,420,399,418,396,418,393,416,394,412,393,409,390,407" href="../att/pat_dbf30.html" target="AttributesFrame" title="0.001241" alt="0.001241">
+  <area shape="poly" coords="720,441,721,438,725,439,728,439,730,436,731,433,731,429,729,427,726,425,722,423,718,423,716,421,718,418,721,415,722,412,725,411,729,411,733,409,738,407,740,405,744,405,748,408,751,410,754,410,759,411,762,410,766,410,769,410,769,414,773,416,776,415,776,495,773,494,769,493,768,497,766,499,763,501,761,498,763,495,762,492,759,490,758,488,757,484,755,481,753,478,751,476,747,474,744,476,741,476,739,474,736,472,732,472,729,472,726,470,727,467,728,463,729,459,730,456,730,452,732,449,731,446,727,444,723,443,721,445,720,441" href="../att/pat_dbf31.html" target="AttributesFrame" title="0.001325" alt="0.001325">
+  <area shape="poly" coords="649,431,652,429,655,427,659,426,663,427,667,427,670,427,672,430,674,432,677,435,680,436,685,434,688,435,691,434,694,437,698,436,701,438,704,442,708,441,711,439,714,438,718,440,720,444,723,443,727,444,731,446,732,449,730,452,730,456,729,459,728,463,727,467,726,470,729,472,732,472,736,472,739,474,741,476,744,476,746,474,750,475,753,478,755,481,757,484,758,488,759,490,762,492,763,495,761,498,762,501,766,499,768,498,768,494,772,494,775,494,776,500,775,504,775,508,773,513,772,516,770,519,767,519,765,522,767,525,769,528,772,528,775,530,772,533,773,536,769,536,768,533,765,532,764,536,766,539,768,542,768,545,646,545,644,541,642,539,639,536,636,532,638,529,641,525,643,522,642,518,642,513,643,510,646,509,650,505,653,502,656,499,658,496,660,493,662,490,663,486,663,482,665,479,664,475,665,472,664,469,662,466,661,460,660,457,659,452,659,448,658,444,654,441,653,438,652,434,650,431" href="../att/pat_dbf32.html" target="AttributesFrame" title="0.004127" alt="0.004127">
+  <area shape="poly" coords="412,466,415,468,417,471,421,471,422,474,421,478,421,483,423,487,424,491,424,496,425,500,428,500,431,499,435,501,438,500,442,501,445,505,447,508,451,509,455,507,459,506,464,504,469,501,471,499,475,498,480,500,483,501,486,501,493,501,497,502,501,502,503,499,507,498,510,499,513,499,516,502,519,504,521,507,519,510,517,513,516,518,512,519,510,522,509,525,511,528,508,531,508,534,511,535,512,538,512,541,511,545,254,545,257,543,261,540,267,537,270,535,274,533,277,531,279,530,284,527,288,524,291,523,296,520,300,517,303,515,307,513,311,510,315,508,318,506,321,504,324,502,327,501,330,499,334,497,337,495,340,493,344,491,350,487,353,485,358,482,363,478,367,476,370,474,374,473,378,471,382,469,385,468,389,466,393,464,398,464,403,465,406,465,411,466" href="../att/pat_dbf33.html" target="AttributesFrame" title="0.009854" alt="0.009854">
+  <area shape="poly" coords="768,545,768,542,766,539,764,536,765,532,768,533,769,536,772,537,772,534,774,531,772,528,769,528,767,525,765,522,766,519,769,520,772,517,772,514,774,511,775,507,775,503,776,545,768,545" href="../att/pat_dbf35.html" target="AttributesFrame" title="0.001162" alt="0.001162">
+  <area shape="poly" coords="535,545,540,543,544,542,548,540,551,539,555,537,557,534,560,532,565,532,568,530,571,529,574,528,577,530,580,531,584,532,587,533,591,532,595,532,598,531,602,530,607,530,611,530,615,530,618,530,621,528,625,529,628,530,633,531,636,532,639,536,642,539,644,541,646,544,535,545" href="../att/pat_dbf36.html" target="AttributesFrame" title="0.004978" alt="0.004978">
+</map>
+</center>
+</body>
+</html>
